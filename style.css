@@ -26,6 +26,18 @@ header{
     text-align: center;
     box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
 }
+header ul{
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+header ul li{
+    width: 100%;
+}
+header ul li:first-of-type a i{
+    width: 25px;
+    color: #000;
+}
 header a img{
     width: 180px;
     margin: auto;
@@ -74,18 +86,32 @@ li marker{
 #restaurants{
     padding: 20px;
 }
-
+li{
+    list-style: none;
+}
 .card{
     text-decoration: none;
     color: black;
     margin: 20px;
-
+    position: relative;
 }
 figure{
+    position: relative;
     width: 350px;
     border-radius: 10px;
     background-color: #fff;
     text-decoration: none;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
+}
+.badge{
+    position: absolute;
+    padding: 5px 10px;
+    border-radius: 3px;
+    right: 15px;
+    top: 15px;
+    background-color: rgb(156, 228, 198);
+    color: #27946a;
+    font-weight: bold;
     box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
 }
 .card figure img{
@@ -95,14 +121,89 @@ figure{
     border-radius: 10px 10px 0 0px;
 }
 figcaption {
+    position: relative;
     padding: 15px;
     text-decoration: none;
 }
 figcaption i{
-    float: right;
-    font-size: 30px;
-    margin-top: -35px;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    font-size: 25px;
 }
+footer{
+    height: 200px;
+    background-color: #353535;
+}
+
+/* menu 1 */
+
+#bg-menu1 img{
+    width: 100%;
+}
+.top-rounded{
+    padding: 20px;
+    border-radius: 20px;
+}
+.head-restaurant{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.head-restaurant h2{
+    margin-left: 0;
+}
+.cartes h3{
+    position: relative;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 20px;
+    margin: 5px 0;
+}
+.cartes ul li{
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
+    margin: 10px 0;
+}
+h3:before{
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid #96edc0;
+    margin-top: 20px;
+}
+
+.cartes ul li article{
+    flex-grow: 7;
+    padding: 10px;
+    position: relative;
+}
+.article-price{
+    position: absolute;
+    right: 10px;
+    text-align: right;
+    font-weight: bold;
+}
+.article-check{
+    flex-grow: 3;
+    background-color: #96edc0;
+    border-radius: 0px 10px 10px 0px;
+
+}
+.article-check i{
+    color: white;
+}
+
+
+
+
+/* footer */
+
 footer{
     height: 200px;
     background-color: #353535;
