@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: calibri;
+    font-family: 'Roboto', sans-serif;
 }
 a{
     text-decoration: none;
@@ -16,6 +16,7 @@ h2{
     font-weight: bolder;
     margin: 10px;
     box-sizing: border-box;
+    font-size: 20px;
 }
 h3{
     font-weight: bold;
@@ -40,6 +41,7 @@ header ul li{
 header ul li:first-of-type a i{
     width: 25px;
     color: #000;
+    font-size: 25px;
 }
 li{
     list-style: none;
@@ -179,7 +181,7 @@ footer{
     background-color: #353535;
 }
 
-/* menu 1 */
+/* menu template */
 
 #bg-menu1 img{
     width: 100%;
@@ -199,8 +201,17 @@ footer{
     flex-direction: row;
     justify-content: space-between;
 }
+
 .head-restaurant h2{
     margin-left: 0;
+    flex-grow: 7;
+    font-family: 'Shrikhand', cursive;
+    text-transform: capitalize;
+}
+.head-restaurant i{
+    margin: auto;
+    font-size: 22px;
+    flex-grow: 3;
 }
 .cartes{
     margin: 35px auto;
@@ -208,17 +219,17 @@ footer{
 .cartes article span:first-of-type{
     width: 250px;
     text-overflow: ellipsis;
-    font-size: 18px;
+    font-size: 15px;
 }
 .cartes h3{
     position: relative;
     text-transform: uppercase;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 15px;
     margin: 5px 0;
 }
 h4{
-    font-size: 22px;
+    font-size: 17px;
 }
 .cartes ul li{
     display: flex;
@@ -227,16 +238,6 @@ h4{
     box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
     margin: 15px 0;
 }
-/*h3:before{
-    content: "";
-    position: absolute;
-    width: 10%;
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    border-bottom: 2px solid #96edc0;
-    margin-top: 20px;
-}*/
 hr{
     width: 40px;
     border: 1px solid #96edc0;
@@ -269,7 +270,7 @@ hr{
 }
 
 .bottom-cta{
-    margin: auto;
+    margin: 50px auto;
     text-align: center;
 }
 .cta-rounded{
@@ -294,8 +295,10 @@ footer{
     background-color: #353535;
     padding: 15px;
 }
-#logo-footer{
-   background: url("img/ohmyfood@2x.svg"); 
+#logo-footer p{
+    font-family: 'Shrikhand', cursive;
+    color: white;
+    font-size: 20px;
 }
 footer ul li {
     margin: 5px auto;
