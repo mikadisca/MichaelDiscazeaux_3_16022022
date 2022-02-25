@@ -38,10 +38,14 @@ header ul{
 header ul li{
     width: 100%;
 }
+header ul li:first-of-type{
+    margin: auto;
+    text-align: left;
+}
 header ul li:first-of-type a i{
     width: 25px;
     color: #000;
-    font-size: 25px;
+    font-size: 20px;
 }
 li{
     list-style: none;
@@ -298,13 +302,13 @@ footer{
 #logo-footer p{
     font-family: 'Shrikhand', cursive;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
 }
 footer ul li {
-    margin: 5px auto;
+    margin: 10px auto;
 }
 footer ul li a{
-    font-size: 20px;
+    font-size: 14px;
     color: #fff;
 }
 footer ul li a i{
