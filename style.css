@@ -21,9 +21,6 @@ h2{
 h3{
     font-weight: bold;
 }
-/*.wrapper{
-    width : 992px;
-}*/
 header{
     padding: 20px;
     background-color: white;
@@ -38,15 +35,13 @@ header ul{
 header ul li{
     width: 100%;
 }
-header ul li:first-of-type{
-    margin: auto;
-    text-align: left;
-}
+
 header ul li:first-of-type a i{
     width: 25px;
     color: #000;
     font-size: 20px;
 }
+
 li{
     list-style: none;
 }
