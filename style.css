@@ -31,8 +31,8 @@ body{
     font-size: 45px;
     transform-origin: 50% 50%;
     position: absolute;
-    top: 42%;
-    left: 42%;
+    top: 50%;
+    left: 50%;
     animation: spin 2s ease-in-out infinite ;
     color: #9d35d2;
 }
@@ -43,13 +43,59 @@ body{
 
 @media screen and (min-width: 992px) {
     main{
-        width: 1400px;
         margin: 0 auto;
+    }
+    #fonctionnement{
+        text-align: center;
+    }
+    #fonctionnement ol li{
+        display: inline;
+    }
+    #restaurants {
+        margin: auto;
+        max-width: 1400px;
+    }
+    #restaurants h2{
+        text-align: center;
+        margin: 50px;
+    }
+    #restaurants ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #restaurants ul li{
+        min-width: 325px ;
+    }
+    /* template menu desktop */
+    header ul{
+        max-width: 700px ;
+    }
+    header ul li:first-of-type{
+        text-align: left ;
+    }
+    .head-restaurant{
+        justify-content: center;
+        max-width: 700px;
+        margin: auto;
+    }
+    .head-restaurant h2{
+        max-width: 400px;
+    }
+    .head-restaurant i{
+        text-align: right;
+    }
+    .cartes{
+        max-width: 700px;
+    }
+    footer{
+        text-align: center;
     }
 }
 
 
-@media screen and (max-width: 992px) {
+/*@media screen and (max-width: 992px) {*/
 
 
 h2{
