@@ -69,11 +69,15 @@ body{
         min-width: 325px ;
     }
     /* template menu desktop */
+
     header ul{
         max-width: 700px ;
     }
     header ul li:first-of-type{
         text-align: left ;
+    }
+    .top-rounded{
+        margin-top: 700px;
     }
     .head-restaurant{
         justify-content: center;
