@@ -18,11 +18,14 @@ body{
     z-index: 999;
     animation: loader 3s linear;
     animation-fill-mode: forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 @keyframes loader { 
-    0% { visibility: 100%; }
+    0% { opacity: 100%; }
     90% { opacity: 100%; }
-    100% { opacity: 0%; display: none; z-index: -10; }
+   100% { opacity: 0%; display: none; z-index: -10; }
   } 
 #spinner{
     border-radius: 50%;
@@ -31,11 +34,12 @@ body{
     height: 50px;
     font-size: 45px;
     transform-origin: 50% 50%;
-    position: absolute;
+    /*position: absolute;
     top: 50%;
-    left: 50%;
+    left: 50%;*/
     animation: spin 2s ease-in-out infinite ;
     color: #9d35d2;
+    margin: auto;
 }
 @keyframes spin {
     0% { transform: rotate(0deg); }
@@ -287,8 +291,10 @@ figcaption i{
 }
 .heart-fill:hover {
     opacity: 100%;
+    cursor: pointer;
 }
 .heart-stroke{
+    font-size: 25px;
     color: #000;
 }
 footer{
@@ -315,9 +321,7 @@ footer{
     margin-top: 200px;
 }
 .head-restaurant{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    position: relative;
 }
 
 .head-restaurant h2{
@@ -328,8 +332,11 @@ footer{
 }
 .head-restaurant i{
     margin: auto;
-    font-size: 22px;
-    flex-grow: 3;
+    font-size: 25px;
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+    /*flex-grow: 3;*/
 }
 .cartes{
     margin: 35px auto;
