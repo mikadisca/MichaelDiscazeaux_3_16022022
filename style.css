@@ -335,8 +335,7 @@ footer{
     font-size: 25px;
     position: absolute;
     right: 25px;
-    bottom: 10px;
-    /*flex-grow: 3;*/
+    bottom: 5px;
 }
 .cartes{
     margin: 35px auto;
